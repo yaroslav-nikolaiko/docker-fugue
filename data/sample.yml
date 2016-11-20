@@ -1,0 +1,16 @@
+version: '2'
+services:
+  dictionary-service:
+    container_name: dictionary-service
+    image: lingvo-movie/dictionary-service
+    ports:
+       - "8101:8080"
+    external_links:
+      - mysql
+
+
+
+networks:
+  default:
+    external:
+      name: custom_compose
