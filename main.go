@@ -14,11 +14,10 @@ func init() {
 
 func main(){
 	root := yaml.Create("data/sample.yml")
-	r := root.Value()
-	fmt.Println(r)
 	node := root.GetNode("services.dictionary-service.external_links")
-	node.AddScalar("sdfsdf")
+	node = node.AddScalar("sdfsdfnb")
 	fmt.Println(node)
+	fmt.Println(root)
 	//root.Write("output.yaml")
 
 }
