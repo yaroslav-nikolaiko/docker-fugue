@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 	"fmt"
-	"github.com/yaroslav-nikolaiko/docker-fugue/parser"
+	"github.com/yaroslav-nikolaiko/docker-fugue/parser/yaml"
 )
 
 func init() {
